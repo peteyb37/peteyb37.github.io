@@ -17,7 +17,7 @@ import SuspenseWrapper from "./components/SuspenseWrapper";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <Header />
         <Routes>
           <Route path="/music" element={<Music />} />
