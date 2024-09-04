@@ -1,5 +1,5 @@
 import { Container, CssBaseline, Grid, Typography, Box } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Home from './components/Home';
 import Header from './components/header';
 import Footer from './components/Footer';
@@ -15,6 +15,12 @@ import "./App.css";
 import SuspenseWrapper from "./components/SuspenseWrapper";
 
 function App() {
+
+  useEffect(() => {
+    document.title="BUDD Dev"
+  },[])
+
+
   return (
     <div>
       <BrowserRouter basename='/'>
