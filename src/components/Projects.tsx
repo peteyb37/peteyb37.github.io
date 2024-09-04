@@ -26,7 +26,7 @@ function Projects() {
           </Typography>
           <Divider variant="middle" sx={{ bgcolor: "#FFFFFA", marginBottom: '5px', marginTop: '5px' }}/>
           <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-            Progress not sure how to display yet
+            Progress not sure how I'd like to display yet
 
           </Box>
         </Box>
