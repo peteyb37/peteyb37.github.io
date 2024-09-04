@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Music from "./components/Music";
-import Tour from "./components/Tour";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import NoPage from "./components/NoPage";
 import Layout from "./components/Layout";
@@ -22,6 +22,8 @@ function App() {
         <Routes>
           <Route path="/music" element={<Music />} />
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </BrowserRouter>
