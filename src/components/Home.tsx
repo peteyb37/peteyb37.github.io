@@ -284,7 +284,7 @@ const noMob = () => {
   }
 
   const mob = () => {
-    return <div style={{width: '100vw', height: '100vh', backgroundColor: 'black', textAlign: 'center', alignItems: 'center' }}>
+    return <div style={{margin: 0, padding: 0, width: '100vw', height: '100vh', backgroundColor: 'black', textAlign: 'center', alignItems: 'center' }}>
       <Box sx={{marginTop: '100px', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
         <Typography sx={{marginBottom: '30px'}}>NEW ALBUM</Typography>
         <Box sx={{border: '1px solid white',marginBottom: '30px'}}><img src={NewAlbum} width={250} height={250} alt='New Album' /></Box>
