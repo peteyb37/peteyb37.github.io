@@ -1,4 +1,4 @@
-import { Box, Typography, Icon, Tooltip, Dialog, DialogTitle, DialogContent  } from '@mui/material';
+import { Box, Typography, Icon, Tooltip, Dialog, DialogTitle, DialogContent, Button, Divider  } from '@mui/material';
 import React,{useState} from 'react';
 import stockPhoto from '../assets/stockGuitarBGPhoto.jpg';
 import Submarine from '../assets/Submarine.svg';
@@ -11,10 +11,14 @@ import Crow from '../assets/Crow.svg';
 import Candy from '../assets/Candy.svg';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import Spotify from '../assets/Spotify.svg';
+import Apple from '../assets/Apple.svg';
+import EmailIcon from '@mui/icons-material/Email';
+import NewAlbum from '../assets/newAlbumTestPhoto.png';
 
 import Header from './header';
-function Home() {
+function Home(isMobile: any) {
 
   const [openDialog, setOpenDialog] = useState(false);
   
@@ -186,6 +190,7 @@ const handlePreviewClick = (songName: any) => {
 }
   
 
+const noMob = () => {
   return (
     <Box sx={{overflow: 'hidden', borderTop: '3px solid #912F40', display: 'flex', flexDirection: 'column', height: '79vh', backgroundColor: 'black', justifyContent: 'center', alignItems: 'center'}}>
       <Box sx={{
@@ -260,7 +265,62 @@ const handlePreviewClick = (songName: any) => {
           </Dialog>
         )}
     </Box>
-  )
+  )}
+
+  const handleIconClick = (site: String) => {
+    if(site === "Spotify"){
+      window.open("https://open.spotify.com/artist/56X2nqsClqdDWy6d34rOxC", '_blank');
+    }
+    if(site === "Apple"){
+      window.open("https://music.apple.com/us/artist/peter-budd/1505497748", '_blank');
+    }
+    if(site === "Youtube"){
+      window.open('https://www.youtube.com/channel/UCYPAw2SiHqoEteCLzzX4w_g/featured', '_blank')
+    }
+    if(site === "Email"){
+      window.location.href = 'mailto:peterbuddmusic@gmail.com';
+    }
+    
+  }
+
+  const mob = () => {
+    return <div style={{width: '100vw', height: '100vh', backgroundColor: 'black', textAlign: 'center', alignItems: 'center' }}>
+      <Box sx={{marginTop: '100px', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <Typography sx={{marginBottom: '30px'}}>NEW ALBUM</Typography>
+        <Box sx={{border: '1px solid white',marginBottom: '30px'}}><img src={NewAlbum} width={250} height={250} alt='New Album' /></Box>
+        <Typography sx={{marginBottom: '30px'}}>COMING SOON</Typography>
+
+      </Box>
+      
+
+      
+        <Box>
+        <Button onClick={() => handleIconClick("Youtube")} sx={{borderRadius: '100px', border: '2px solid #912F40', width: '40px', height: '40px', marginTop: '3px', "&:hover":{backgroundColor: '#702632'}}}>
+        <YouTubeIcon sx={{color: '#FFFFFA'}} />
+      </Button>
+      <Button onClick={() => handleIconClick("Spotify")} sx={{borderRadius: '100px', border: '2px solid #912F40', width: '40px', height: '40px', marginTop: '3px', marginLeft: '10px', "&:hover":{backgroundColor: '#702632'}}}>
+        <Icon>
+            <img style={{marginBottom: '8px'}} src={Spotify} height={20} width={20}/>
+        </Icon>
+        </Button>
+        <Button onClick={() => handleIconClick("Apple")} sx={{borderRadius: '100px', border: '2px solid #912F40', width: '40px', height: '40px', marginTop: '3px', marginLeft: '10px', "&:hover":{backgroundColor: '#702632'}}}>
+        <Icon>
+            <img style={{marginBottom: '7px'}} src={Apple} height={22} width={22}/>
+        </Icon>
+      </Button>
+      <Button onClick={() => handleIconClick("Email")} sx={{borderRadius: '100px', border: '2px solid #912F40', height: '40px', marginTop: '3px', width: '40px', marginLeft: '10px', "&:hover":{backgroundColor: '#702632'}}}>
+        <EmailIcon fontSize="small" sx={{color: '#FFFFFA'}} />
+      </Button>
+        </Box>
+
+    </div>
+  }
+
+  if(isMobile.isMobile === true){
+    return mob()
+  }else{
+    return noMob()
+  }
 }
 
 export default Home;
