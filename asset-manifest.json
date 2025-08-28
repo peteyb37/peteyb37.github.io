@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c34f230b.css",
-    "main.js": "/static/js/main.91aa1788.js",
+    "main.js": "/static/js/main.13428dbd.js",
     "static/js/453.e5206688.chunk.js": "/static/js/453.e5206688.chunk.js",
     "static/media/newAlbumTestPhoto.png": "/static/media/newAlbumTestPhoto.21b63ece067d55455f44.png",
     "static/media/rush400.jpg": "/static/media/rush400.c0b95c90cc867a6a441b.jpg",
     "static/media/puzzle400.jpg": "/static/media/puzzle400.340654464b8b29c7b5b6.jpg",
-    "static/media/homeBackground.jpg": "/static/media/homeBackground.29e214dbf30ee20756ba.jpg",
     "static/media/rewind400.jpg": "/static/media/rewind400.2f963d229febc44d0350.jpg",
     "static/media/people400.jpg": "/static/media/people400.695c0ef2263b7602b133.jpg",
-    "static/media/Budd.svg": "/static/media/Budd.130c4750f31f9fca32faf823563dc266.svg",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -54,14 +52,10 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-vietnamese-700-normal.woff2": "/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
     "static/media/roboto-vietnamese-300-normal.woff2": "/static/media/roboto-vietnamese-300-normal.32fc45a3d1e8ea11fabc.woff2",
-    "static/media/Candy.svg": "/static/media/Candy.a1f06a92e353e58fa9325fcae4b82a71.svg",
     "static/media/roboto-vietnamese-300-normal.woff": "/static/media/roboto-vietnamese-300-normal.8472d69545c7409091b4.woff",
     "static/media/roboto-vietnamese-400-normal.woff": "/static/media/roboto-vietnamese-400-normal.e0e8ba725ebd107367a8.woff",
     "static/media/roboto-vietnamese-500-normal.woff": "/static/media/roboto-vietnamese-500-normal.657896dad292ee9a0a0a.woff",
     "static/media/roboto-vietnamese-700-normal.woff": "/static/media/roboto-vietnamese-700-normal.4df79f684fcbca8386bd.woff",
-    "static/media/Submarine.svg": "/static/media/Submarine.587ede694eb3cc37907906ba67b90c31.svg",
-    "static/media/Wine.svg": "/static/media/Wine.5851c668dab6944e28404616e1c0906d.svg",
-    "static/media/Fish.svg": "/static/media/Fish.b12d3992eec96cd4bf84ab7c856bf18f.svg",
     "static/media/Spotify.svg": "/static/media/Spotify.0469d14819b217304e30cc66fe96ee7f.svg",
     "static/media/roboto-greek-ext-500-normal.woff2": "/static/media/roboto-greek-ext-500-normal.6fb9cffb1d3e72bf9293.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
@@ -71,16 +65,14 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
-    "static/media/House.svg": "/static/media/House.a340940c7d63545700c3ae0a4d951d16.svg",
-    "static/media/Crow.svg": "/static/media/Crow.8aea9744dcadf007dae409180bddb53e.svg",
     "index.html": "/index.html",
     "static/media/Apple.svg": "/static/media/Apple.f6b17fe90cb6fcb983e45c510bf08c15.svg",
     "main.c34f230b.css.map": "/static/css/main.c34f230b.css.map",
-    "main.91aa1788.js.map": "/static/js/main.91aa1788.js.map",
+    "main.13428dbd.js.map": "/static/js/main.13428dbd.js.map",
     "453.e5206688.chunk.js.map": "/static/js/453.e5206688.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c34f230b.css",
-    "static/js/main.91aa1788.js"
+    "static/js/main.13428dbd.js"
   ]
 }
