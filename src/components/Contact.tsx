@@ -91,10 +91,8 @@ function Contact() {
 }
 
   return (
-    <Box sx={{borderTop: '3px solid #912F40', display: 'flex', flexDirection: 'column', height: '80vh', backgroundColor: 'black', width: '100%'}}>
-      
+    <Box sx={{display: 'flex', flexDirection: 'column', height: '80vh', backgroundColor: 'black', width: '100%', marginTop: '25px'}}>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSf7UTvZdGp2LE0Swo66UwrWvt-4EeXVyj-YfoYz0jhgSXYtlQ/formResponse" method="POST" target="_blank" style={{margin: '20px 30% 0px 30%', display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center'}}>
-          <Typography sx={{color: '#FFFFFA', fontSize: '37px', marginBottom: '1px'}}>Contact</Typography>
           <Divider sx={{ borderBottomWidth: '1px', borderColor: '#912F40', marginBottom: '20px' }} /> 
           <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
             <TextField onChange={handleChange} value={fieldVals.firstName} name="entry.1808372734" id="first-name" variant="outlined" label="First Name"size="small" sx={{...textFieldStyle}} />
