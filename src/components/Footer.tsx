@@ -3,7 +3,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <Box sx={{position: 'sticky', width: '100%', left: '0', bottom: '0', height: '8.5vh', overflow: 'hidden', backgroundColor: '#080705',}} />
+    <Box sx={{padding: '0.5rem 1rem', textAlign: 'center', backgroundColor: 'black', color: 'white'}}>
+      <Typography sx={{fontSize: '10px', fontStyle: 'italic'}}>~No AI was used in the creation of this website~</Typography>
+    </Box>
   )
 }
 

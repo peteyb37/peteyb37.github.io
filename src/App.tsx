@@ -1,39 +1,27 @@
 import { Container, CssBaseline, Grid, Typography, Box } from '@mui/material';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import Home from './components/Home';
 import Header from './components/header';
 import Footer from './components/Footer';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Music from "./components/Music";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import NoPage from "./components/NoPage";
-import Layout from "./components/Layout";
 
 import "./App.css";
 import SuspenseWrapper from "./components/SuspenseWrapper";
 
 function App() {
 
-  useEffect(() => {
-    document.title="BUDD Dev"
-  },[])
+  const [scrollDirective, setScrollDirective] = useState(false);
+
+  const triggerLeftMenu = () => {
+    setScrollDirective(!scrollDirective);
+  }
 
 
   return (
-    <div>
-      <BrowserRouter basename='/'>
-        <Header />
-        <Routes>
-          <Route path="/music" element={<Music />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <Box sx={{display: 'flex', flexDirection: 'column', height: '100vh'}}>
+      <Header triggerLeftMenu={triggerLeftMenu} />
+      <Home leftMenuClicked={scrollDirective} triggerLeftMenu={triggerLeftMenu} />
+      <Footer />
+    </Box>
   );
 }
 
